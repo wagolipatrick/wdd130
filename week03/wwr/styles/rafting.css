@@ -27,6 +27,7 @@ footer {
 
 header {
     background-color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
     color: var(--accent2-color);
     display: flex;
     align-items: center;
