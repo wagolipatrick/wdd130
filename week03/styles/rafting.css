@@ -1,0 +1,175 @@
+/* General Page Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header > img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navigation */
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: #006994;
+}
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    right: 10%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero article img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+}
+
+/* History Section */
+
+.history {
+    padding: 40px 20px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Adventures Section */
+
+.adventures {
+    padding: 40px 20px;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    padding: 10px 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .socialmedia img {
+    width: 35px;
+    height: 35px;
+}
