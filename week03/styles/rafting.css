@@ -1,5 +1,11 @@
 /* General Page Styles */
 
+:root {
+    --text-color: #333;
+    --link-hover-color: #006994;
+    --surface-color: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -21,7 +27,7 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--surface-color);
 }
 
 header > img {
@@ -40,13 +46,13 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
     font-weight: bold;
     padding: 10px;
 }
 
 header nav a:hover {
-    color: #006994;
+    color: var(--link-hover-color);
 }
 
 /* Hero Section */
