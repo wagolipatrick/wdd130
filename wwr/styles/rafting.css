@@ -47,12 +47,9 @@ a {
 header {
     background-color: var(--accent1-color);
     color: white;
-
     display: grid;
     grid-template-columns: 150px 1fr;
-
     align-items: center;
-
     padding: 15px 40px;
 }
 
@@ -61,19 +58,19 @@ header > img {
     height: auto;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
 }
 
-nav a {
+header nav a {
     color: white;
     font-weight: bold;
     padding: 10px 15px;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
@@ -95,111 +92,73 @@ nav a:hover {
 
 .hero h1 {
     position: absolute;
-
     top: 35%;
     left: 0;
     right: 0;
-
     text-align: center;
-
     color: white;
-
     font-size: 3rem;
-
     text-shadow: 2px 2px 5px black;
-
     margin: 0;
-
     z-index: 2;
 }
 
-/* ========================================
-   HERO ARTICLE
-======================================== */
+/* HERO ARTICLE */
 
 .hero article {
     position: absolute;
-
     bottom: 20px;
     left: 10%;
     right: 10%;
-
     background-color: rgba(0, 0, 0, 0.65);
-
     color: white;
-
     padding: 20px;
-
     min-height: 100px;
-
     text-align: left;
-
     z-index: 3;
-
     overflow: auto;
 }
 
 .hero article p {
     line-height: 1.5;
-
     margin: 0;
 }
 
-/* REQUIRED BY WDD 130 */
-
 .hero article img {
     float: right;
-
     width: 120px;
     height: 80px;
-
     object-fit: cover;
-
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
-/* ========================================
-   HERO MESSAGE
-   Used if another page uses hero-message
-======================================== */
+/* HERO MESSAGE */
 
 .hero-message {
     position: absolute;
-
     bottom: 20px;
     left: 10%;
     right: 10%;
-
     background-color: rgba(0, 0, 0, 0.65);
-
     color: white;
-
     padding: 20px;
-
     min-height: 100px;
-
     text-align: left;
-
     z-index: 3;
-
     overflow: auto;
 }
 
 .hero-message p {
     line-height: 1.5;
-
     margin: 0;
 }
 
 .hero-message img {
     float: right;
-
     width: 120px;
     height: 80px;
-
     object-fit: cover;
-
     margin-left: 20px;
 }
 
@@ -209,21 +168,17 @@ nav a:hover {
 
 main {
     max-width: 1200px;
-
     margin: 0 auto;
-
     padding: 30px;
 }
 
 main h2 {
     color: var(--accent1-color);
-
     text-align: center;
-
     margin-bottom: 20px;
 }
 
-section {
+main section {
     margin-bottom: 45px;
 }
 
@@ -237,9 +192,7 @@ section {
 
 .home-intro p {
     max-width: 800px;
-
     margin: 0 auto;
-
     line-height: 1.7;
 }
 
@@ -249,29 +202,23 @@ section {
 
 .adventure {
     display: grid;
-
     grid-template-columns: repeat(5, 1fr);
-
     gap: 15px;
 }
 
 .adventure figure {
     margin: 0;
-
     text-align: center;
 }
 
 .adventure img {
     width: 100%;
-
     height: 160px;
-
     object-fit: cover;
 }
 
 .adventure figcaption {
     padding: 10px;
-
     font-weight: bold;
 }
 
@@ -281,15 +228,10 @@ section {
 
 .button {
     display: inline-block;
-
     background-color: var(--accent2-color);
-
     color: var(--accent1-color);
-
     padding: 12px 25px;
-
     font-weight: bold;
-
     border-radius: 5px;
 }
 
@@ -298,31 +240,21 @@ section {
 }
 
 /* ========================================
-   ABOUT PAGE
-   HISTORY
+   ABOUT - HISTORY
 ======================================== */
 
 .history {
     display: grid;
-
     grid-template-columns: 1fr 180px 1fr;
-
     gap: 30px;
-
     align-items: center;
-
     padding: 20px 30px;
-
     border: 1px solid #ddd;
-
     background-color: #fafafa;
 }
 
-/* LEFT AND RIGHT HISTORY TEXT */
-
 .history-text {
     line-height: 1.7;
-
     font-size: 14px;
 }
 
@@ -330,93 +262,45 @@ section {
     margin: 0;
 }
 
-/* CENTER HISTORY */
-
 .history-center {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
 }
 
 .history-center h2 {
     margin: 0 0 10px;
-
     color: var(--accent1-color);
 }
 
 .history-center img {
     width: 150px;
-
     height: 100px;
-
     object-fit: cover;
-
     margin: 0 auto;
 }
 
 /* ========================================
-   CONTACT TEAM
-======================================== */
-
-.contact-team {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-}
-
-.contact-team figure {
-    width: 180px;
-
-    margin: 0;
-
-    text-align: center;
-}
-
-.contact-team img {
-    width: 180px;
-
-    height: 150px;
-
-    object-fit: cover;
-
-    border-radius: 5px;
-}
-
-/* ========================================
-   TRIPS PAGE
+   TRIPS
 ======================================== */
 
 .trips {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .trip-card {
     border: 1px solid #ddd;
-
     padding: 15px;
-
     background-color: #f8f8f8;
 }
 
 .trip-card img {
     width: 100%;
-
     height: 200px;
-
     object-fit: cover;
 }
 
@@ -434,24 +318,19 @@ section {
 
 .trip-table {
     width: 100%;
-
     border-collapse: collapse;
-
     margin-top: 25px;
 }
 
 .trip-table th,
 .trip-table td {
     border: 1px solid #999;
-
     padding: 12px;
-
     text-align: center;
 }
 
 .trip-table th {
     background-color: var(--accent1-color);
-
     color: white;
 }
 
@@ -463,184 +342,7 @@ section {
    CONTACT PAGE
 ======================================== */
 
-.contact-info {
-    text-align: center;
-
-    line-height: 1.8;
-}
-
-.contact-form {
-    max-width: 700px;
-
-    margin: 30px auto;
-}
-
-.contact-form label {
-    display: block;
-
-    margin-top: 15px;
-
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-
-    padding: 12px;
-
-    margin-top: 5px;
-
-    border: 1px solid #aaa;
-
-    border-radius: 4px;
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-.contact-form button {
-    margin-top: 20px;
-
-    padding: 12px 30px;
-
-    background-color: var(--accent1-color);
-
-    color: white;
-
-    border: none;
-
-    border-radius: 5px;
-
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: var(--accent2-color);
-
-    color: var(--accent1-color);
-}
-
-/* ========================================
-   FOOTER
-======================================== */
-
-footer {
-    background-color: var(--accent1-color);
-
-    color: white;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 20px 40px;
-
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* ========================================
-   SOCIAL MEDIA
-======================================== */
-
-.socialmedia {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    gap: 15px;
-}
-
-.socialmedia a {
-    display: inline-block;
-
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
-
-    height: 35px;
-
-    object-fit: contain;
-}
-
-/* ========================================
-   RESPONSIVE
-======================================== */
-
-@media (max-width: 800px) {
-
-    header {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
-        gap: 15px;
-    }
-
-    nav {
-        justify-content: center;
-
-        flex-wrap: wrap;
-    }
-
-    .hero > img {
-        height: 300px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero article {
-        left: 5%;
-        right: 5%;
-    }
-
-    .adventure {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .history {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-    }
-
-    .history-text {
-        text-align: center;
-    }
-
-    .trips {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        flex-direction: column;
-
-        gap: 15px;
-
-        text-align: center;
-    }
-
-    .socialmedia {
-        justify-content: center;
-    }
-}
-
-/* ========================================
-   CONTACT PAGE ONLY
-======================================== */
+/* CONTACT INFORMATION */
 
 .contact-information {
     text-align: center;
@@ -649,6 +351,10 @@ footer p {
 
 .contact-information h2 {
     margin-bottom: 15px;
+}
+
+.contact-info {
+    text-align: center;
 }
 
 .contact-info p {
@@ -657,134 +363,6 @@ footer p {
 }
 
 /* MAP LEFT - MESSAGE RIGHT */
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
-}
-
-.contact-map {
-    width: 100%;
-}
-
-.message-section {
-    width: 100%;
-}
-
-.contact-map h2,
-.message-section h2 {
-    text-align: center;
-}
-
-/* MESSAGE FORM */
-
-.message-section .contact-form {
-    max-width: 100%;
-    margin: 0;
-}
-
-.message-section .contact-form label {
-    display: block;
-    margin-top: 12px;
-    font-weight: bold;
-}
-
-.message-section .contact-form input,
-.message-section .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-.message-section .contact-form fieldset {
-    margin-top: 15px;
-    padding: 15px;
-}
-
-.message-section .contact-form fieldset label {
-    margin-top: 8px;
-    font-weight: normal;
-}
-
-.message-section .contact-form fieldset input {
-    width: auto;
-    margin-right: 8px;
-}
-
-.message-section .contact-form textarea {
-    height: 120px;
-}
-
-.message-section .contact-form button {
-    margin-top: 15px;
-}
-
-/* WE ARE HERE TO SERVE YOU */
-
-.service-section {
-    margin-top: 45px;
-}
-
-.service-section .contact-team {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.service-section .contact-team figure {
-    width: 180px;
-    margin: 0;
-    text-align: center;
-}
-
-.service-section .contact-team img {
-    width: 180px;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-section .contact-team {
-        flex-wrap: wrap;
-    }
-
-}
-
-/* ========================================
-   CONTACT PAGE ONLY
-======================================== */
-
-.contact-information {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact-information h2 {
-    margin-bottom: 15px;
-}
-
-.contact-info {
-    text-align: center;
-}
-
-.contact-info p {
-    margin: 0;
-    padding: 0;
-}
-
-/* ========================================
-   MAP LEFT - MESSAGE RIGHT
-======================================== */
 
 .contact-grid {
     display: grid;
@@ -812,9 +390,7 @@ footer p {
     border: 0;
 }
 
-/* ========================================
-   MESSAGE FORM
-======================================== */
+/* MESSAGE FORM */
 
 .message-section {
     width: 100%;
@@ -839,6 +415,8 @@ footer p {
     padding: 10px;
     margin-top: 5px;
     box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }
 
 .message-section .contact-form fieldset {
@@ -860,16 +438,16 @@ footer p {
     margin-right: 8px;
 }
 
-.message-section .contact-form label:has(input[type="checkbox"]) {
+.message-section .contact-form input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.message-section .contact-form label.checkbox-label {
     display: flex;
     align-items: center;
     gap: 8px;
     font-weight: normal;
-}
-
-.message-section .contact-form input[type="checkbox"] {
-    width: auto;
-    margin: 0;
 }
 
 .message-section .contact-form textarea {
@@ -880,10 +458,20 @@ footer p {
 .message-section .contact-form button {
     margin-top: 15px;
     padding: 12px 30px;
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-section .contact-form button:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 /* ========================================
-   WE ARE HERE TO SERVE YOU
+   CONTACT - WE ARE HERE TO SERVE YOU
 ======================================== */
 
 .service-section {
@@ -912,6 +500,7 @@ footer p {
     width: 180px;
     height: 150px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .service-section .contact-team figcaption {
@@ -920,10 +509,89 @@ footer p {
 }
 
 /* ========================================
-   MOBILE
+   FOOTER
+======================================== */
+
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* SOCIAL MEDIA - RIGHT SIDE */
+
+footer .socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+footer .socialmedia a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer .socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* ========================================
+   RESPONSIVE
 ======================================== */
 
 @media (max-width: 800px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero > img {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero article {
+        left: 5%;
+        right: 5%;
+    }
+
+    .adventure {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .history {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .history-text {
+        text-align: center;
+    }
+
+    .trips {
+        grid-template-columns: 1fr;
+    }
 
     .contact-grid {
         grid-template-columns: 1fr;
@@ -934,4 +602,13 @@ footer p {
         flex-wrap: wrap;
     }
 
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    footer .socialmedia {
+        justify-content: center;
+    }
 }
