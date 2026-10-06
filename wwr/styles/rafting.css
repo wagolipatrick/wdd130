@@ -102,17 +102,13 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background-color: var(--overlay-color);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding: 20px;
 }
@@ -241,29 +237,61 @@ nav a:hover {
     overflow: hidden;
 }
 
-.hero img {
+/* Only the main hero image */
+.hero > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
+/* HERO TITLE */
+
 .hero h1 {
     position: absolute;
-
     left: 50%;
-    top: 50%;
-
+    top: 35%;
     transform: translate(-50%, -50%);
-
     color: var(--white-color);
     background-color: var(--overlay-color);
-
     padding: 15px 25px;
-
     text-align: center;
-
     white-space: nowrap;
+    z-index: 2;
+}
+
+/* HERO ARTICLE */
+
+.hero article {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    background-color: var(--overlay-color);
+    color: var(--white-color);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+/* HERO ARTICLE IMAGE */
+
+.hero article img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* HERO ARTICLE TEXT */
+
+.hero article p {
+    color: var(--white-color);
+    text-align: left;
 }
 
 /* HISTORY */
@@ -275,6 +303,14 @@ nav a:hover {
 
 .history h2 {
     margin-bottom: 20px;
+}
+
+.history > img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .history p {
@@ -296,55 +332,40 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* THREE SMALL HORIZONTAL CARDS */
-
 .adventure-images {
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
-
-    gap: 35px;
-
-    max-width: 850px;
-
+    gap: 20px;
+    max-width: 1100px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 /* EACH ADVENTURE */
 
 .adventure-images figure {
-    width: 240px;
-
+    width: 200px;
     background-color: var(--white-color);
-
     padding: 10px;
-
     text-align: center;
-
     border-radius: 4px;
 }
 
 /* ADVENTURE IMAGE */
 
 .adventure-images img {
-    width: 220px;
-
-    height: 145px;
-
+    width: 180px;
+    height: 130px;
     object-fit: cover;
-
     display: block;
-
     margin: 0 auto 10px;
 }
 
 /* ADVENTURE TITLE */
 
 .adventure-images h3 {
-    font-size: 1.2rem;
-
+    font-size: 1.1rem;
     margin-bottom: 8px;
 }
 
@@ -352,11 +373,8 @@ nav a:hover {
 
 .adventure-images figcaption {
     font-size: 0.9rem;
-
     line-height: 1.4;
-
     color: var(--secondary-color);
-
     padding: 0 5px 8px;
 }
 
@@ -379,18 +397,12 @@ nav a:hover {
 
 .trips-hero h1 {
     position: absolute;
-
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     color: var(--white-color);
-
     background-color: var(--overlay-color);
-
     padding: 15px 25px;
-
     text-align: center;
 }
 
@@ -398,33 +410,23 @@ nav a:hover {
 
 .trip-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
-
     padding: 40px 25px;
 }
 
 .trip-card {
     border: 1px solid #ddd;
-
     background-color: var(--white-color);
-
     padding: 15px;
-
     border-radius: 6px;
 }
 
 .trip-card img {
     width: 100%;
-
     height: 190px;
-
     object-fit: cover;
-
     display: block;
-
     margin-bottom: 15px;
 }
 
@@ -440,36 +442,29 @@ nav a:hover {
 
 .trip-table-section {
     padding: 40px 25px;
-
     background-color: var(--light-color);
 }
 
 .trip-table-section h2 {
     text-align: center;
-
     margin-bottom: 20px;
 }
 
 table {
     width: 100%;
-
     border-collapse: collapse;
-
     background-color: var(--white-color);
 }
 
 th,
 td {
     border: 1px solid #999;
-
     padding: 12px;
-
     text-align: center;
 }
 
 th {
     background-color: var(--primary-color);
-
     color: var(--white-color);
 }
 
@@ -479,19 +474,14 @@ th {
 
 .contact-hero {
     position: relative;
-
     height: 300px;
-
     overflow: hidden;
 }
 
 .contact-hero > img {
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     display: block;
 }
 
@@ -499,31 +489,21 @@ th {
 
 .contact-hero-overlay {
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
 }
 
 .contact-hero-overlay h1 {
     color: var(--white-color);
-
     background-color: var(--overlay-color);
-
     padding: 15px 25px;
-
     font-size: 2.6rem;
-
     margin: 0;
 }
 
@@ -531,7 +511,6 @@ th {
 
 .contact-info {
     text-align: center;
-
     padding: 35px 25px;
 }
 
@@ -541,7 +520,6 @@ th {
 
 .contact-info > p {
     max-width: 700px;
-
     margin: 0 auto 25px;
 }
 
@@ -549,11 +527,8 @@ th {
 
 .contact-details {
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 60px;
 }
 
@@ -569,11 +544,8 @@ th {
 
 .contact-content {
     display: grid;
-
     grid-template-columns: 1fr 1.7fr;
-
     gap: 40px;
-
     padding: 30px 25px 40px;
 }
 
@@ -581,7 +553,6 @@ th {
 
 .contact-form {
     background-color: #f0f5f8;
-
     padding: 25px;
 }
 
@@ -591,46 +562,32 @@ th {
 
 .contact-form label {
     display: block;
-
     margin-top: 12px;
-
     margin-bottom: 5px;
-
     font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-
     padding: 10px;
-
     border: 1px solid #ccc;
-
     background-color: var(--white-color);
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-form textarea {
     height: 100px;
-
     resize: vertical;
 }
 
 .contact-form button {
     margin-top: 15px;
-
     padding: 10px 25px;
-
     background-color: var(--primary-color);
-
     color: var(--white-color);
-
     border: none;
-
     font-weight: bold;
-
     cursor: pointer;
 }
 
@@ -646,51 +603,31 @@ th {
     margin-bottom: 20px;
 }
 
-/* THREE EMPLOYEES HORIZONTAL */
-
 .employee-grid {
     display: flex;
-
     flex-direction: row;
-
     justify-content: space-between;
-
     align-items: flex-start;
-
     gap: 20px;
-
     width: 100%;
 }
-
-/* EMPLOYEE */
 
 .employee {
     flex: 1;
-
     width: 33.33%;
-
     text-align: center;
 }
 
-/* EMPLOYEE IMAGE */
-
 .employee img {
     width: 100%;
-
     height: 140px;
-
     object-fit: cover;
-
     display: block;
-
     margin: 0 auto 8px;
 }
 
-/* EMPLOYEE NAME */
-
 .employee p {
     font-weight: bold;
-
     margin: 0;
 }
 
@@ -706,9 +643,7 @@ th {
 
 .map-section iframe {
     width: 100%;
-
     height: 180px;
-
     border: 0;
 }
 
@@ -718,11 +653,8 @@ th {
 
 footer {
     background-color: var(--secondary-color);
-
     color: var(--white-color);
-
     padding: 25px;
-
     text-align: center;
 }
 
@@ -734,11 +666,8 @@ footer p {
 
 .socialmedia {
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 15px;
 }
 
@@ -748,9 +677,7 @@ footer p {
 
 .socialmedia img {
     width: 30px;
-
     height: 30px;
-
     object-fit: contain;
 }
 
@@ -762,15 +689,12 @@ footer p {
 
     header {
         grid-template-columns: 1fr;
-
         justify-items: center;
-
         gap: 15px;
     }
 
     nav {
         justify-content: center;
-
         flex-wrap: wrap;
     }
 
@@ -783,7 +707,7 @@ footer p {
     /* ABOUT */
 
     .adventure-images {
-        gap: 20px;
+        gap: 15px;
     }
 
     .adventure-images figure {
@@ -792,8 +716,13 @@ footer p {
 
     .adventure-images img {
         width: 100%;
-
         height: 130px;
+    }
+
+    /* HERO */
+
+    .hero article {
+        width: 90%;
     }
 
     /* TRIPS */
@@ -814,7 +743,6 @@ footer p {
 
     .employee-grid {
         flex-direction: row;
-
         gap: 15px;
     }
 
@@ -857,13 +785,41 @@ footer p {
         height: 250px;
     }
 
+    /* ABOUT HERO */
+
+    .hero h1 {
+        font-size: 2rem;
+        white-space: normal;
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero article {
+        width: 94%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .hero article img {
+        width: 70px;
+    }
+
+    .hero article p {
+        font-size: 0.8rem;
+    }
+
+    /* ABOUT HISTORY */
+
+    .history > img {
+        width: 90%;
+        height: 170px;
+    }
+
     /* ABOUT ADVENTURES */
 
     .adventure-images {
         flex-direction: column;
-
         align-items: center;
-
         gap: 20px;
     }
 
@@ -873,7 +829,6 @@ footer p {
 
     .adventure-images img {
         width: 220px;
-
         height: 145px;
     }
 
@@ -881,7 +836,6 @@ footer p {
 
     .contact-details {
         flex-direction: column;
-
         gap: 15px;
     }
 
@@ -889,7 +843,6 @@ footer p {
 
     .employee-grid {
         flex-direction: column;
-
         align-items: center;
     }
 
@@ -900,11 +853,9 @@ footer p {
     /* HERO TEXT */
 
     .home-hero h1,
-    .hero h1,
     .trips-hero h1,
     .contact-hero-overlay h1 {
         font-size: 2rem;
-
         white-space: normal;
     }
 
@@ -923,7 +874,6 @@ footer p {
 
     .newsletter-section input {
         width: 100%;
-
         margin-bottom: 10px;
     }
 }
