@@ -637,3 +637,125 @@ footer p {
         justify-content: center;
     }
 }
+
+/* ========================================
+   CONTACT PAGE ONLY
+======================================== */
+
+.contact-information {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-information h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* MAP LEFT - MESSAGE RIGHT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contact-map {
+    width: 100%;
+}
+
+.message-section {
+    width: 100%;
+}
+
+.contact-map h2,
+.message-section h2 {
+    text-align: center;
+}
+
+/* MESSAGE FORM */
+
+.message-section .contact-form {
+    max-width: 100%;
+    margin: 0;
+}
+
+.message-section .contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.message-section .contact-form input,
+.message-section .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.message-section .contact-form fieldset {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.message-section .contact-form fieldset label {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.message-section .contact-form fieldset input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.message-section .contact-form textarea {
+    height: 120px;
+}
+
+.message-section .contact-form button {
+    margin-top: 15px;
+}
+
+/* WE ARE HERE TO SERVE YOU */
+
+.service-section {
+    margin-top: 45px;
+}
+
+.service-section .contact-team {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-section .contact-team figure {
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+.service-section .contact-team img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-section .contact-team {
+        flex-wrap: wrap;
+    }
+
+}
