@@ -68,7 +68,7 @@
                 <h2>Find Us</h2>
 
                 <iframe src="https://www.google.com/maps?q=Kampala,Uganda&output=embed" width="100%"
-                  height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                  height="350" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
@@ -92,32 +92,61 @@
                     <input type="email" id="email" name="email" required>
 
 
+                    <!-- MESSAGE PURPOSE -->
+
                     <fieldset>
 
                         <legend>Message Purpose</legend>
 
-                        <label>
-                            <input type="radio" name="purpose" value="general" required>
+                        <label for="general">
+
+                            <input type="radio" id="general" name="purpose" value="general"
+                              required>
+
                             General Inquiry
+
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
+
+                        <label for="reservation">
+
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+
                             Reservation Question
+
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
+
+                        <label for="suggestion">
+
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+
                             Website Suggestion
+
                         </label>
 
                     </fieldset>
 
 
+                    <!-- MESSAGE -->
+
                     <label for="message">Message</label>
 
                     <textarea id="message" name="message" required></textarea>
 
+
+                    <!-- CHECKBOX -->
+
+                    <label for="newsletter">
+
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+                        Please send me updates about White Water Rafting.
+
+                    </label>
+
+
+                    <!-- SUBMIT -->
 
                     <button type="submit">
                         Send Message

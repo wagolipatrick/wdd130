@@ -759,3 +759,179 @@ footer p {
     }
 
 }
+
+/* ========================================
+   CONTACT PAGE ONLY
+======================================== */
+
+.contact-information {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-information h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   MAP LEFT - MESSAGE RIGHT
+======================================== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-map {
+    width: 100%;
+}
+
+.contact-map h2,
+.message-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* MAP */
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+/* ========================================
+   MESSAGE FORM
+======================================== */
+
+.message-section {
+    width: 100%;
+}
+
+.message-section .contact-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.message-section .contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.message-section .contact-form input[type="text"],
+.message-section .contact-form input[type="email"],
+.message-section .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.message-section .contact-form fieldset {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.message-section .contact-form fieldset legend {
+    font-weight: bold;
+}
+
+.message-section .contact-form fieldset label {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.message-section .contact-form fieldset input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.message-section .contact-form label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.message-section .contact-form input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.message-section .contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.message-section .contact-form button {
+    margin-top: 15px;
+    padding: 12px 30px;
+}
+
+/* ========================================
+   WE ARE HERE TO SERVE YOU
+======================================== */
+
+.service-section {
+    margin-top: 45px;
+}
+
+.service-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.service-section .contact-team {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.service-section .contact-team figure {
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+.service-section .contact-team img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.service-section .contact-team figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .service-section .contact-team {
+        flex-wrap: wrap;
+    }
+
+}
